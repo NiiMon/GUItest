@@ -39,7 +39,7 @@ public class ProductDataModelDAOSqliteImpl implements ProductDataModelDAO {
     static String _url;
 
     public ProductDataModelDAOSqliteImpl() throws SQLException, ClassNotFoundException {
-        String db_name = "sample23.db";
+        String db_name = "product.db";
         _url = "jdbc:sqlite:" + db_name;
 
         getConnection();

@@ -36,9 +36,11 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
                         .getScaledInstance(150, 150,
                                 Image.SCALE_DEFAULT)
         ));
+        image_lable.setAlignmentX(Component.LEFT_ALIGNMENT);
         panel.add(image_lable);
 
         change_pic_button = new JButton("change pic");
+        change_pic_button.setAlignmentX(Component.LEFT_ALIGNMENT);
         change_pic_button.addActionListener(this);
         change_pic_button.setActionCommand("popup_change_pic");
         fc = new JFileChooser();
@@ -48,6 +50,7 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
         panel.add(change_pic_button);
 
         JPanel name_panel = new JPanel();
+        name_panel.setAlignmentX(Component.LEFT_ALIGNMENT);
         name_label = new JLabel("name");
         name_panel.add(name_label);
         name_textField = new JTextField();
@@ -56,6 +59,7 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
         panel.add(name_panel);
 
         JPanel price_panel = new JPanel();
+        price_panel.setAlignmentX(Component.LEFT_ALIGNMENT);
         price_label = new JLabel("price");
         price_panel.add(price_label);
         price_textField = new JTextField();
