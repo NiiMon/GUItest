@@ -28,7 +28,7 @@ public class Product extends JPanel {
         this.parent = parent;
 
         _id = id;
-        product_name = "product name";
+        product_name = "商品名称";   //"product name";
         Random random = new Random();
         int low = 10;
         int high = 100;

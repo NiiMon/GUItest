@@ -44,7 +44,7 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
         image_lable.setAlignmentX(Component.LEFT_ALIGNMENT);
         panel.add(image_lable);
 
-        change_pic_button = new JButton("change pic");
+        change_pic_button = new JButton("更改图片");  //"change pic");
         change_pic_button.setAlignmentX(Component.LEFT_ALIGNMENT);
         change_pic_button.addActionListener(this);
         change_pic_button.setActionCommand("popup_change_pic");
@@ -58,7 +58,7 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
 
         JPanel name_panel = new JPanel();
         name_panel.setAlignmentX(Component.LEFT_ALIGNMENT);
-        name_label = new JLabel("name");
+        name_label = new JLabel("商品名称");    //"name");
         name_panel.add(name_label);
         name_textField = new JTextField();
         name_textField.setColumns(20);
@@ -67,14 +67,14 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
 
         JPanel price_panel = new JPanel();
         price_panel.setAlignmentX(Component.LEFT_ALIGNMENT);
-        price_label = new JLabel("price");
+        price_label = new JLabel("商品单价");   //"price");
         price_panel.add(price_label);
         price_textField = new JTextField();
         price_textField.setColumns(20);
         price_panel.add(price_textField);
         panel.add(price_panel);
 
-        creat_button = new JButton("create product");
+        creat_button = new JButton("创建商品"); //"create product");
         creat_button.addActionListener(this);
         panel.add(creat_button);
         add(panel);
@@ -142,9 +142,12 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
 
             if (price == null || name_textField.getText().equals("")) {
                 JOptionPane.showMessageDialog(this,
-                        "please check following:\n" +
-                                "1. name cannot be empty\n" +
-                                "2. price must be a valid number"
+                        "请检查以下：\n" +
+                                "1. 商品名称不能为空\n" +
+                                "2. 商品单价必须是数字（英文小数点）"
+//                        "please check following:\n" +
+//                                "1. name cannot be empty\n" +
+//                                "2. price must be a valid number"
                 );
             } else {
                 ProductDataModel pdm = new ProductDataModel(

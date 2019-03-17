@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1baf6dfd-ae2f-4a46-b8f0-0153ea7dbe1c" name="Default" comment="CreateProductPopWindow.java: &#10;- component left alignment">
+    <list default="true" id="1baf6dfd-ae2f-4a46-b8f0-0153ea7dbe1c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" afterPath="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" />
-      <change beforePath="$PROJECT_DIR$/src/java/ShoppingCartRow.java" afterPath="$PROJECT_DIR$/src/java/ShoppingCartRow.java" />
+      <change beforePath="$PROJECT_DIR$/src/java/PopWindowTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/java/Product.java" afterPath="$PROJECT_DIR$/src/java/Product.java" />
       <change beforePath="$PROJECT_DIR$/src/java/Test.java" afterPath="$PROJECT_DIR$/src/java/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,39 +17,50 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/java/Test.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="355" column="8" lean-forward="false" selection-start-line="355" selection-start-column="8" selection-end-line="355" selection-end-column="8" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#fillCard1#0;class#Test#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="CreateProductPopWindow.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="373">
-                  <caret line="107" column="54" lean-forward="false" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="54" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CreateProductPopWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2584">
+              <caret line="146" column="53" lean-forward="false" selection-start-line="146" selection-start-column="53" selection-end-line="146" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="277" column="0" lean-forward="false" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShoppingCartRow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/ShoppingCartRow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-903">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,7 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BoxLayout</find>
       <find>shopping_jbutton_update</find>
       <find>update</find>
       <find>shopping_cart_component</find>
@@ -90,6 +101,7 @@
       <find>shopping_update_</find>
       <find>writetoFile</find>
       <find>summary_write</find>
+      <find>new pro</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,13 +128,13 @@
         <option value="$PROJECT_DIR$/src/java/ProductModelDAO.java" />
         <option value="$PROJECT_DIR$/src/java/ProductModelDAOHashMapImpl.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModelDAOHashMapImpl.java" />
-        <option value="$PROJECT_DIR$/src/java/PopWindowTest.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModelDAO.java" />
-        <option value="$PROJECT_DIR$/src/java/Product.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModelDAOSqliteImpl.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModel.java" />
-        <option value="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" />
         <option value="$PROJECT_DIR$/src/java/ShoppingCartRow.java" />
+        <option value="$PROJECT_DIR$/src/java/Product.java" />
+        <option value="$PROJECT_DIR$/src/java/PopWindowTest.java" />
+        <option value="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" />
         <option value="$PROJECT_DIR$/src/java/Test.java" />
       </list>
     </option>
@@ -468,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552805995840</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Test.java: card2: &#10;- fix: row product name follows a number.&#10;- write receipt: missing customer name in file.">
+      <created>1552854275478</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1552854275478</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -546,7 +565,8 @@
     <MESSAGE value="Test.java: card2: &#10;- remove customer name display.&#10;- restore customer JLabel font size." />
     <MESSAGE value="Test.java: card2: &#10;- check if shopping cart is empty before writing a file." />
     <MESSAGE value="Test.java: card2: &#10;- create a new folder for each date.&#10;- write the receipt into a folder named current date" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test.java: card2: &#10;- create a new folder for each date.&#10;- write the receipt into a folder named current date" />
+    <MESSAGE value="Test.java: card2: &#10;- fix: row product name follows a number.&#10;- write receipt: missing customer name in file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test.java: card2: &#10;- fix: row product name follows a number.&#10;- write receipt: missing customer name in file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -559,14 +579,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2033">
-          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/ciba.jpg" />
     <entry file="file://$PROJECT_DIR$/src/java/Demo_8_4.java" />
     <entry file="file://$PROJECT_DIR$/src/java/Demo_8_5.java" />
@@ -624,13 +636,6 @@
     <entry file="file://$PROJECT_DIR$/20190316120115_.txt" />
     <entry file="file://$PROJECT_DIR$/20190316120920_ddddasdfasdf.txt" />
     <entry file="file://$PROJECT_DIR$/20190316121053_ddasdfasdf.txt" />
-    <entry file="file://$PROJECT_DIR$/src/java/ProductDataModelDAOHashMapImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="36" column="53" lean-forward="false" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ProductDataModelDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -638,36 +643,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/PopWindowTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="49" column="32" lean-forward="false" selection-start-line="45" selection-start-column="8" selection-end-line="49" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#197#198#0" expanded="false" />
-            <element signature="e#224#225#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/20190316183219_.txt" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/javax/swing/JOptionPane.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/awt/Window.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/Double.java" />
-    <entry file="file://$PROJECT_DIR$/src/java/ProductDataModelDAOSqliteImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ProductDataModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -694,26 +673,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="107" column="54" lean-forward="false" selection-start-line="107" selection-start-column="54" selection-end-line="107" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/receipts/20190317/20190317130835_阿大雷.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/ShoppingCartRow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -726,13 +689,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ProductDataModelDAOHashMapImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ProductDataModelDAOSqliteImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ShoppingCartRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-903">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/PopWindowTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2584">
+          <caret line="146" column="53" lean-forward="false" selection-start-line="146" selection-start-column="53" selection-end-line="146" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receipts/20190317/20190317134356_微信小可爱.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="355" column="8" lean-forward="false" selection-start-line="355" selection-start-column="8" selection-end-line="355" selection-end-column="8" />
+        <state relative-caret-position="468">
+          <caret line="277" column="0" lean-forward="false" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#fillCard1#0;class#Test#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -4,13 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.nio.file.Files;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -29,8 +26,6 @@ public class Test extends JFrame implements ActionListener {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-//        PDM_db.add(new ProductDataModel(1, "one", null, 1));
-//        PDM_db.add(new ProductDataModel(2, "two", null, 5.23));
 
         Test obj = new Test(PDM_db);
     }
@@ -65,8 +60,8 @@ public class Test extends JFrame implements ActionListener {
         shopping_cart = new HashMap<>();
         shopping_cart_component = new HashMap<>();
 
-        SHOPPINGPANEL = "Products";
-        TEXTPANEL = "Summary";
+        SHOPPINGPANEL = "商品"; //"Products";
+        TEXTPANEL = "订单"; //"Summary";
         default_image_path = "image/default_product_image.png";   // default image
 
         extraWindowWidth = 100;
@@ -114,7 +109,7 @@ public class Test extends JFrame implements ActionListener {
 
 
     void fillCard1() {
-        JButton new_product = new JButton("new product");
+        JButton new_product = new JButton("创建新商品");  //"new product");
         new_product.addActionListener(this);
         new_product.setActionCommand("product_new");
         grid_products.put(-2, new_product);
@@ -137,24 +132,24 @@ public class Test extends JFrame implements ActionListener {
         JPanel summary = new JPanel();
 
         // summary customer name
-        summary_customer_name_display = new JLabel("Customer: ");
+        summary_customer_name_display = new JLabel("顾客：");   //"Customer: ");
         summary_customer_name_input = new JTextField();
         summary_customer_name_input.setColumns(10);
 
         // summary refresh button
-        summary_refresh = new JButton("refresh");
+        summary_refresh = new JButton("刷新");  //"refresh");
         summary_refresh.addActionListener(this);
         summary_refresh.setActionCommand("summary_refresh");
 
         // summary total price
-        summary_total_price = new JLabel("Total: $ 0.00");
+        summary_total_price = new JLabel("总价：$ 0.00");     //"Total: $ 0.00");
         summary_total_price.setFont(new Font(summary_total_price.getFont().getName(),
                 Font.PLAIN,
                 summary_total_price.getFont().getSize() * 2));
         summary_total_price.setForeground(Color.RED);
 
         // write to file button
-        summary_writeToFile = new JButton("write to file");
+        summary_writeToFile = new JButton("生成订单");  //"write to file");
         summary_writeToFile.addActionListener(this);
         summary_writeToFile.setActionCommand("summary_write");
 
@@ -168,7 +163,7 @@ public class Test extends JFrame implements ActionListener {
         summary.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 0));
         summary.setBorder(
                 BorderFactory.createCompoundBorder(
-                        BorderFactory.createTitledBorder("Order summary"),
+                        BorderFactory.createTitledBorder("订单详情"), //"Order summary"),
                         BorderFactory.createEmptyBorder(5,5,5,5)));
 
         // add to card2
@@ -276,8 +271,8 @@ public class Test extends JFrame implements ActionListener {
                 } else {
                     System.out.println("already exist; ");
                     JOptionPane.showMessageDialog(this,
-                            "already added!",
-                            "warning",
+                            "已经添加到购物车", //"already added!",
+                            "警告", //"warning",
                             JOptionPane.WARNING_MESSAGE);
                 }
 
@@ -317,7 +312,7 @@ public class Test extends JFrame implements ActionListener {
                     sum += product.product_price * shopping_cart.get(id);
                 }
 
-                summary_total_price.setText("Total: $ " +
+                summary_total_price.setText("总价： $ " +    //"Total: $ " +
                         String.format("%.2f", sum));
 
 
@@ -329,8 +324,8 @@ public class Test extends JFrame implements ActionListener {
                 if (shopping_cart.isEmpty()) {
                     JOptionPane.showMessageDialog(
                             this,
-                            "shopping cart is empty",
-                            "failed!",
+                            "购物车是空的！", //"shopping cart is empty",
+                            "失败", //"failed!",
                             JOptionPane.ERROR_MESSAGE
                     );
                     return;
@@ -367,9 +362,12 @@ public class Test extends JFrame implements ActionListener {
                     writer.println(stringSpliter("-", 60));
                     writer.printf(
                             "%s%s%s\n",
-                            padRight("product", 35),
-                            padLeft("count", 10),
-                            padLeft("price", 15)
+                            padRight("商品",  //"product",
+                                    35),
+                            padLeft("数量",    //"count",
+                                    10),
+                            padLeft("价值",    //"price",
+                                    15)
                     );
                     writer.println(stringSpliter("-", 60));
 
@@ -397,8 +395,8 @@ public class Test extends JFrame implements ActionListener {
                     System.out.println("file written: "+file_name + file_ext);
                     JOptionPane.showMessageDialog(
                             this,
-                            file_path + file_name + file_ext + " has been written.",
-                            "success!",
+                            "订单输出在：" + file_path + file_name + file_ext, //file_path + file_name + file_ext + " has been written.",
+                            "成功！",//"success!",
                             JOptionPane.INFORMATION_MESSAGE
                     );
 
