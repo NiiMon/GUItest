@@ -40,6 +40,7 @@ public class Test extends JFrame implements ActionListener {
     String SHOPPINGPANEL;
     String TEXTPANEL;
     String default_image_path;
+    String lastVisitedPath;
 
     int num_of_cols;
     int product_id ;

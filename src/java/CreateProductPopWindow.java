@@ -24,6 +24,7 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 
 
+
         setAlwaysOnTop (true);
         setSize(400, 400);
         setVisible(true);
@@ -77,6 +78,9 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == change_pic_button) {
+            if (_parent.lastVisitedPath != null) {
+                fc = new JFileChooser(_parent.lastVisitedPath);
+            }
             int returnVal = fc.showOpenDialog(this);
 
             if (returnVal == JFileChooser.APPROVE_OPTION) {
@@ -84,6 +88,7 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
                 File file = fc.getSelectedFile();
                 //This is where a real application would open the file.
                 absImagePath = file.getAbsolutePath();
+                _parent.lastVisitedPath = absImagePath;
 
                 image_lable.setIcon(
                         new ImageIcon(
