@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test$1.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test$2.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test$2.class" />
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test.class" />
+      <change beforePath="$PROJECT_DIR$/src/java/ShoppingCartRow.java" afterPath="$PROJECT_DIR$/src/java/ShoppingCartRow.java" />
       <change beforePath="$PROJECT_DIR$/src/java/Test.java" afterPath="$PROJECT_DIR$/src/java/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,14 +23,25 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/java/Test.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+                <state relative-caret-position="189">
+                  <caret line="309" column="12" lean-forward="false" selection-start-line="309" selection-start-column="12" selection-end-line="309" selection-end-column="12" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="method#fillCard1#0;class#Test#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ShoppingCartRow.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/java/ShoppingCartRow.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="256">
+                  <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -89,6 +101,7 @@
       <find>showMessageDialog</find>
       <find>repaint</find>
       <find>add</find>
+      <find>shopping_update_</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,7 +127,6 @@
         <option value="$PROJECT_DIR$/src/java/ProductModelDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/java/ProductModelDAO.java" />
         <option value="$PROJECT_DIR$/src/java/ProductModelDAOHashMapImpl.java" />
-        <option value="$PROJECT_DIR$/src/java/ShoppingCartRow.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModelDAOHashMapImpl.java" />
         <option value="$PROJECT_DIR$/src/java/PopWindowTest.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModelDAO.java" />
@@ -123,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/java/ProductDataModel.java" />
         <option value="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" />
         <option value="$PROJECT_DIR$/src/java/Test.java" />
+        <option value="$PROJECT_DIR$/src/java/ShoppingCartRow.java" />
       </list>
     </option>
   </component>
@@ -432,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552802980716</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test.java: card1: &#10;- remove auto create product button.">
+      <created>1552803221607</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552803221607</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -475,7 +495,8 @@
     <MESSAGE value="CreateProductPopWindow.java: &#10;- change imageIcon once a picture has been selected, and it's valid." />
     <MESSAGE value="CreateProductPopWindow.java: &#10;- remember the last valid path on the next file choosing." />
     <MESSAGE value="CreateProductPopWindow.java: &#10;- copy the choosed product image to image/ path.&#10;- change the ProductDataModel's path to image/ path.&#10;&#10;ProductDataModel.java:&#10;- add imagePath setter" />
-    <option name="LAST_COMMIT_MESSAGE" value="CreateProductPopWindow.java: &#10;- copy the choosed product image to image/ path.&#10;- change the ProductDataModel's path to image/ path.&#10;&#10;ProductDataModel.java:&#10;- add imagePath setter" />
+    <MESSAGE value="Test.java: card1: &#10;- remove auto create product button." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test.java: card1: &#10;- remove auto create product button." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -502,6 +523,7 @@
           <caret line="131" column="9" lean-forward="false" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#fillCard1#0;class#Test#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -542,17 +564,6 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/awt/Component.java" />
     <entry file="file://$PROJECT_DIR$/src/java/ProductModelDAOImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/java/ProductModelDAOHashMapImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/java/ShoppingCartRow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="55" column="36" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-          <folding>
-            <element signature="e#1138#1716#0" expanded="false" />
-            <element signature="e#1715#1716#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/sql/Statement.java" />
     <entry file="jar://$PROJECT_DIR$/lib/sqlite-jdbc-3.23.1.jar!/org/sqlite/jdbc3/JDBC3PreparedStatement.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -677,11 +688,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+        <state relative-caret-position="189">
+          <caret line="309" column="12" lean-forward="false" selection-start-line="309" selection-start-column="12" selection-end-line="309" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#fillCard1#0;class#Test#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ShoppingCartRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

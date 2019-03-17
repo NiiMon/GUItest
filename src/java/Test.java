@@ -307,21 +307,7 @@ public class Test extends JFrame implements ActionListener {
                 System.out.println("unknown command in product");
             }
         } else if (command_split[0].equals("shopping")) {
-            if (command_split[1].equals("update")) {
-                // command: shopping_update_id
-                System.out.println(command);
-                int id = Integer.parseInt(command_split[2]);
-
-                ShoppingCartRow row = (ShoppingCartRow) shopping_cart_component.get(id);
-                row.total_price = row.product.product_price *
-                        shopping_cart.get(id);
-                row.product_total_price.setText("$ " +
-                        String.format("%.2f", row.total_price));
-
-                row.revalidate();
-                row.repaint();
-                repaintScrollPane2();
-            } else if (command_split[1].equals("remove")) {
+            if (command_split[1].equals("remove")) {
                 // command: shopping_remove_id
                 System.out.print(command + "; ");
                 int id = Integer.parseInt(command_split[2]);
