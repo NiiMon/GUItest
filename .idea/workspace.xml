@@ -27,8 +27,8 @@
           <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/java/Test.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
+                <state relative-caret-position="-248">
+                  <caret line="371" column="24" lean-forward="false" selection-start-line="371" selection-start-column="24" selection-end-line="371" selection-end-column="24" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#fillCard1#0;class#Test#0" expanded="false" />
@@ -44,8 +44,8 @@
           <file leaf-file-name="CreateProductPopWindow.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="389">
-                  <caret line="80" column="51" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+                <state relative-caret-position="47">
+                  <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -93,6 +93,8 @@
       <find>repaint</find>
       <find>add</find>
       <find>shopping_update_</find>
+      <find>writetoFile</find>
+      <find>summary_write</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -450,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552804184789</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Test.java: card2: &#10;- remove customer name display.&#10;- restore customer JLabel font size.">
+      <created>1552804503691</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552804503691</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -496,7 +505,8 @@
     <MESSAGE value="CreateProductPopWindow.java: &#10;- copy the choosed product image to image/ path.&#10;- change the ProductDataModel's path to image/ path.&#10;&#10;ProductDataModel.java:&#10;- add imagePath setter" />
     <MESSAGE value="Test.java: card1: &#10;- remove auto create product button." />
     <MESSAGE value="Test.java: card2: &#10;- auto update sub-total&#10;- removed &quot;update&quot; button and its Action" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test.java: card2: &#10;- auto update sub-total&#10;- removed &quot;update&quot; button and its Action" />
+    <MESSAGE value="Test.java: card2: &#10;- remove customer name display.&#10;- restore customer JLabel font size." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test.java: card2: &#10;- remove customer name display.&#10;- restore customer JLabel font size." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -673,16 +683,8 @@
         <state relative-caret-position="532">
           <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
           <folding>
-            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="80" column="51" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,12 +698,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
+        <state relative-caret-position="-248">
+          <caret line="371" column="24" lean-forward="false" selection-start-line="371" selection-start-column="24" selection-end-line="371" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fillCard1#0;class#Test#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

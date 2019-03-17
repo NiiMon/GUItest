@@ -170,10 +170,8 @@ public class Test extends JFrame implements ActionListener {
                         BorderFactory.createEmptyBorder(5,5,5,5)));
 
         // add to card2
-
         card2.add(summary);
         card2.setLayout(new GridLayout(0,1,5,5));
-
 
         repaintScrollPane2();
     }
@@ -326,6 +324,16 @@ public class Test extends JFrame implements ActionListener {
                 // command: summary_write
                 System.out.println(command);
 
+                if (shopping_cart.isEmpty()) {
+                    JOptionPane.showMessageDialog(
+                            this,
+                            "shopping cart is empty",
+                            "failed!",
+                            JOptionPane.ERROR_MESSAGE
+                    );
+                    return;
+                }
+
                 // get current time
                 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
                 LocalDateTime now = LocalDateTime.now();
@@ -341,10 +349,12 @@ public class Test extends JFrame implements ActionListener {
                     writer.println(stringSpliter("-", 60));
                     writer.println(summary_customer_name_display.getText());
                     writer.println(stringSpliter("-", 60));
-                    writer.printf("%s%s%s\n",
+                    writer.printf(
+                            "%s%s%s\n",
                             padRight("product", 35),
                             padLeft("count", 10),
-                            padLeft("price", 15));
+                            padLeft("price", 15)
+                    );
                     writer.println(stringSpliter("-", 60));
 
                     // write rows
@@ -354,10 +364,12 @@ public class Test extends JFrame implements ActionListener {
                         int count = shopping_cart.get(id);
                         double price = pdm.get_price() * count;
 
-                        writer.printf("%s%s%s\n",
+                        writer.printf(
+                                "%s%s%s\n",
                                 padRight(name, 35),
                                 padLeft("" + count, 10),
-                                padLeft(String.format("$ " + "%.2f", price), 15));
+                                padLeft(String.format("$ " + "%.2f", price), 15)
+                        );
                     }
 
                     // write footer
@@ -367,12 +379,13 @@ public class Test extends JFrame implements ActionListener {
 
                     writer.close();
                     System.out.println("file written: "+file_name + file_ext);
-                    JOptionPane.showMessageDialog(this,
-                            file_name + file_ext +
-                                    " has been written.",
+                    JOptionPane.showMessageDialog(
+                            this,
+                            file_name + file_ext + " has been written.",
                             "success!",
                             JOptionPane.INFORMATION_MESSAGE
-                            );
+                    );
+
                 } catch (FileNotFoundException e1) {
                     e1.printStackTrace();
                 } catch (UnsupportedEncodingException e1) {
