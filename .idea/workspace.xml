@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test$1.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test$2.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test.class" />
-      <change beforePath="$PROJECT_DIR$/src/java/Test.java" afterPath="$PROJECT_DIR$/src/java/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +26,8 @@
           <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/java/Test.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="348" column="48" lean-forward="true" selection-start-line="348" selection-start-column="48" selection-end-line="348" selection-end-column="48" />
+                <state relative-caret-position="266">
+                  <caret line="348" column="48" lean-forward="false" selection-start-line="348" selection-start-column="48" selection-end-line="348" selection-end-column="48" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#fillCard1#0;class#Test#0" expanded="false" />
@@ -466,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552804904828</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Test.java: card2: &#10;- create a new folder for each date.&#10;- write the receipt into a folder named current date">
+      <created>1552805995840</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1552805995840</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -481,7 +487,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31589147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31589147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -543,7 +549,8 @@
     <MESSAGE value="Test.java: card2: &#10;- auto update sub-total&#10;- removed &quot;update&quot; button and its Action" />
     <MESSAGE value="Test.java: card2: &#10;- remove customer name display.&#10;- restore customer JLabel font size." />
     <MESSAGE value="Test.java: card2: &#10;- check if shopping cart is empty before writing a file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test.java: card2: &#10;- check if shopping cart is empty before writing a file." />
+    <MESSAGE value="Test.java: card2: &#10;- create a new folder for each date.&#10;- write the receipt into a folder named current date" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test.java: card2: &#10;- create a new folder for each date.&#10;- write the receipt into a folder named current date" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -743,8 +750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="348" column="48" lean-forward="true" selection-start-line="348" selection-start-column="48" selection-end-line="348" selection-end-column="48" />
+        <state relative-caret-position="266">
+          <caret line="348" column="48" lean-forward="false" selection-start-line="348" selection-start-column="48" selection-end-line="348" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fillCard1#0;class#Test#0" expanded="false" />
