@@ -80,9 +80,18 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
             int returnVal = fc.showOpenDialog(this);
 
             if (returnVal == JFileChooser.APPROVE_OPTION) {
+
                 File file = fc.getSelectedFile();
                 //This is where a real application would open the file.
                 absImagePath = file.getAbsolutePath();
+
+                image_lable.setIcon(
+                        new ImageIcon(
+                                new ImageIcon(absImagePath)
+                                        .getImage()
+                                        .getScaledInstance(150, 150,
+                                                Image.SCALE_DEFAULT))
+                );
 
                 System.out.println("Opening: " + file.getName());
                 System.out.println(absImagePath);
@@ -108,7 +117,7 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
                         ++_parent.product_id,
                         name_textField.getText(),
                         absImagePath,
-                        price.doubleValue()
+                        price
                 );
                 _parent.PDM_db.add(pdm);
 
