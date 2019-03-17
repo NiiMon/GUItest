@@ -66,7 +66,12 @@ public class Product extends JPanel {
 
     private void initUI() {
         text = new JLabel(product_name);
-        delete = new JButton("x");
+        ImageIcon delete_icon = new ImageIcon(
+                new ImageIcon("image/icon_delete.png")
+                .getImage()
+                .getScaledInstance(20, 20, Image.SCALE_DEFAULT)
+        );
+        delete = new JButton("删除", delete_icon);
         delete.addActionListener(parent);
         delete.setActionCommand("product_remove_" + _id);
 
@@ -90,8 +95,12 @@ public class Product extends JPanel {
                 String.format("%.2f", product_price));
         jLabel_product_price.setForeground(Color.red);
 
-
-        addToCart = new JButton("ADD");
+        ImageIcon addToCart_icon = new ImageIcon(
+                new ImageIcon("image/icon_add.png")
+                        .getImage()
+                        .getScaledInstance(20, 20, Image.SCALE_DEFAULT)
+        );
+        addToCart = new JButton("购物车", addToCart_icon);
         addToCart.addActionListener(parent);
         addToCart.setActionCommand("product_addToCart_" + _id);
         jPSouth = new JPanel();

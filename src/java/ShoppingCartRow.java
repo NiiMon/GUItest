@@ -63,7 +63,12 @@ public class ShoppingCartRow extends JPanel{
 
 
         // remove button
-        jButton_remove = new JButton("remove");
+        ImageIcon delete_icon = new ImageIcon(
+                new ImageIcon("image/icon_delete.png")
+                        .getImage()
+                        .getScaledInstance(20, 20, Image.SCALE_DEFAULT)
+        );
+        jButton_remove = new JButton("移除", delete_icon);
         jButton_remove.addActionListener(parent);
         jButton_remove.setActionCommand("shopping_remove_" + _id);
         this.add(jButton_remove);

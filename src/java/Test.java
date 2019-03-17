@@ -22,8 +22,10 @@ public class Test extends JFrame implements ActionListener {
         try {
             PDM_db = new ProductDataModelDAOSqliteImpl();
         } catch (SQLException e) {
+            System.out.println("getting SQLException when initializing DAO...");
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
+            System.out.println("failed to initialize DAO...");
             e.printStackTrace();
         }
 
@@ -61,11 +63,11 @@ public class Test extends JFrame implements ActionListener {
         shopping_cart_component = new HashMap<>();
 
         SHOPPINGPANEL = "商品"; //"Products";
-        TEXTPANEL = "订单"; //"Summary";
+        TEXTPANEL = "购物车"; //"Summary";
         default_image_path = "image/default_product_image.png";   // default image
 
         extraWindowWidth = 100;
-        num_of_cols = 3;
+        num_of_cols = 4;
         product_id = 0;
         windowLength = 1000;
 
@@ -137,7 +139,12 @@ public class Test extends JFrame implements ActionListener {
         summary_customer_name_input.setColumns(10);
 
         // summary refresh button
-        summary_refresh = new JButton("刷新");  //"refresh");
+        ImageIcon refresh_icon = new ImageIcon(
+                new ImageIcon("image/icon_refresh.png")
+                        .getImage()
+                        .getScaledInstance(20, 20, Image.SCALE_DEFAULT)
+        );
+        summary_refresh = new JButton("刷新", refresh_icon);  //"refresh");
         summary_refresh.addActionListener(this);
         summary_refresh.setActionCommand("summary_refresh");
 
@@ -163,7 +170,7 @@ public class Test extends JFrame implements ActionListener {
         summary.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 0));
         summary.setBorder(
                 BorderFactory.createCompoundBorder(
-                        BorderFactory.createTitledBorder("订单详情"), //"Order summary"),
+                        BorderFactory.createTitledBorder("购物车详情"), //"Order summary"),
                         BorderFactory.createEmptyBorder(5,5,5,5)));
 
         // add to card2
@@ -183,13 +190,14 @@ public class Test extends JFrame implements ActionListener {
 
         //Size and display the window.
         this.setVisible(true);
+        this.setTitle("订单生成器");
         this.setSize(windowLength, windowLength);
-//        this.setResizable(false);
+        this.setResizable(false);
     }
 
     void repaintScrollPane1() {
         card1.setLayout(new GridLayout((grid_products.size() + num_of_cols - 1)/num_of_cols,
-                3, 5, 5));
+                num_of_cols, 5, 5));
 
         card1.revalidate();
         card1.repaint();
