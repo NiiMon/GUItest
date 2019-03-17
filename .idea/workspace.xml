@@ -4,8 +4,11 @@
     <list default="true" id="1baf6dfd-ae2f-4a46-b8f0-0153ea7dbe1c" name="Default" comment="CreateProductPopWindow.java: &#10;- component left alignment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/ProductDataModelDAOSqliteImpl.class" afterPath="$PROJECT_DIR$/out/production/GUItest/ProductDataModelDAOSqliteImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test$1.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test$2.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test.class" />
       <change beforePath="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" afterPath="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" />
-      <change beforePath="$PROJECT_DIR$/src/java/Test.java" afterPath="$PROJECT_DIR$/src/java/Test.java" />
+      <change beforePath="$PROJECT_DIR$/src/java/ProductDataModel.java" afterPath="$PROJECT_DIR$/src/java/ProductDataModel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +41,9 @@
           <file leaf-file-name="CreateProductPopWindow.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="76">
-                  <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="449">
+                  <caret line="144" column="48" lean-forward="false" selection-start-line="144" selection-start-column="48" selection-end-line="144" selection-end-column="48" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -115,12 +116,12 @@
         <option value="$PROJECT_DIR$/src/java/ProductModelDAOHashMapImpl.java" />
         <option value="$PROJECT_DIR$/src/java/ShoppingCartRow.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModelDAOHashMapImpl.java" />
-        <option value="$PROJECT_DIR$/src/java/ProductDataModel.java" />
         <option value="$PROJECT_DIR$/src/java/PopWindowTest.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModelDAO.java" />
         <option value="$PROJECT_DIR$/src/java/Product.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModelDAOSqliteImpl.java" />
         <option value="$PROJECT_DIR$/src/java/Test.java" />
+        <option value="$PROJECT_DIR$/src/java/ProductDataModel.java" />
         <option value="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" />
       </list>
     </option>
@@ -417,12 +418,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552801319701</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="CreateProductPopWindow.java: &#10;- remember the last valid path on the next file choosing.">
+      <created>1552802210468</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552802210468</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -432,7 +439,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31589147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31589147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -442,7 +449,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39825583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39825583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -459,7 +466,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CreateProductPopWindow.java: &#10;- component left alignment" />
     <MESSAGE value="CreateProductPopWindow.java: &#10;- change imageIcon once a picture has been selected, and it's valid." />
-    <option name="LAST_COMMIT_MESSAGE" value="CreateProductPopWindow.java: &#10;- change imageIcon once a picture has been selected, and it's valid." />
+    <MESSAGE value="CreateProductPopWindow.java: &#10;- remember the last valid path on the next file choosing." />
+    <option name="LAST_COMMIT_MESSAGE" value="CreateProductPopWindow.java: &#10;- remember the last valid path on the next file choosing." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -476,9 +484,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1045">
           <caret line="61" column="58" lean-forward="false" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -507,9 +513,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2033">
           <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -621,23 +625,6 @@
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/javax/swing/JOptionPane.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/awt/Window.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/Double.java" />
-    <entry file="file://$PROJECT_DIR$/src/java/ProductDataModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="e#526#527#0" expanded="false" />
-            <element signature="e#552#553#0" expanded="false" />
-            <element signature="e#584#585#0" expanded="false" />
-            <element signature="e#612#613#0" expanded="false" />
-            <element signature="e#649#650#0" expanded="false" />
-            <element signature="e#682#683#0" expanded="false" />
-            <element signature="e#715#716#0" expanded="false" />
-            <element signature="e#744#745#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ProductDataModelDAOSqliteImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -654,10 +641,10 @@
         <state relative-caret-position="283">
           <caret line="309" column="11" lean-forward="false" selection-start-line="309" selection-start-column="11" selection-end-line="309" selection-end-column="11" />
           <folding>
-            <element signature="e#9257#9258#0" expanded="true" />
-            <element signature="e#9313#9314#0" expanded="true" />
-            <element signature="e#9867#9868#0" expanded="true" />
-            <element signature="e#9932#9933#0" expanded="true" />
+            <element signature="e#9257#9258#0" expanded="false" />
+            <element signature="e#9313#9314#0" expanded="false" />
+            <element signature="e#9867#9868#0" expanded="false" />
+            <element signature="e#9932#9933#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -672,13 +659,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/ProductDataModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="45" column="50" lean-forward="false" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <folding>
+            <element signature="e#1033#1034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="449">
+          <caret line="144" column="48" lean-forward="false" selection-start-line="144" selection-start-column="48" selection-end-line="144" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>

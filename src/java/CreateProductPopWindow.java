@@ -5,6 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 
 public class CreateProductPopWindow extends JFrame implements ActionListener {
     Test _parent;
@@ -75,6 +78,17 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
         pack();
     }
 
+    void copyFile(String srcPath, String dstPath) {
+        File src = new File(srcPath);
+        File dst = new File(dstPath);
+
+        try {
+            Files.copy(src.toPath(), dst.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == change_pic_button) {
@@ -124,6 +138,13 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
                         absImagePath,
                         price
                 );
+
+                String dstPath = String.format("image/product_%d.jpg", pdm.get_id());
+                pdm.set_imagePath(dstPath);
+
+                copyFile(absImagePath, dstPath);
+
+
                 _parent.PDM_db.add(pdm);
 
                 Product product = new Product(_parent, pdm);

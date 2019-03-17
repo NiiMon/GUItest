@@ -42,4 +42,8 @@ public class ProductDataModel {
         return String.format("ProductDataMode=[id=%d, name=%s, price=$%.2f, imagePath=%s]",
                 _id, _name, _price, _imagePath);
     }
+
+    public void set_imagePath(String _imagePath) {
+        this._imagePath = _imagePath;
+    }
 }
