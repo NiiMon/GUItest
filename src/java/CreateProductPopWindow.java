@@ -4,6 +4,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
+import java.awt.image.ImageFilter;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -47,6 +48,8 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
         change_pic_button.setAlignmentX(Component.LEFT_ALIGNMENT);
         change_pic_button.addActionListener(this);
         change_pic_button.setActionCommand("popup_change_pic");
+
+
         fc = new JFileChooser();
         fc.setFileFilter(new FileNameExtensionFilter(
                 "Image Files", "jpg", "png", "gif", "jpeg"
@@ -94,6 +97,18 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
         if (e.getSource() == change_pic_button) {
             if (_parent.lastVisitedPath != null) {
                 fc = new JFileChooser(_parent.lastVisitedPath);
+//                fc = new JFileChooser();
+//
+//                //Add a custom file filter and disable the default
+//                //(Accept All) file filter.
+//                fc.addChoosableFileFilter(new ImageFilter());
+//                fc.setAcceptAllFileFilterUsed(false);
+//
+//                //Add custom icons for file types.
+//                fc.setFileView(new ImageFileView());
+//
+//                //Add the preview pane.
+//                fc.setAccessory(new ImagePreview(fc));
             }
             int returnVal = fc.showOpenDialog(this);
 

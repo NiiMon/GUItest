@@ -25,7 +25,7 @@ public class ShoppingCartRow extends JPanel{
 
     private void initUI() {
         // product name
-        product_name = new JLabel(product.product_name + product._id);
+        product_name = new JLabel(product.product_name);
         this.add(product_name);
 
         // product price

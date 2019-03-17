@@ -360,7 +360,10 @@ public class Test extends JFrame implements ActionListener {
 
                     // write header information
                     writer.println(stringSpliter("-", 60));
-                    writer.println(summary_customer_name_display.getText());
+                    writer.println(
+                            summary_customer_name_display.getText() +
+                            summary_customer_name_input.getText()
+                    );
                     writer.println(stringSpliter("-", 60));
                     writer.printf(
                             "%s%s%s\n",
