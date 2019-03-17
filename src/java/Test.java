@@ -1,3 +1,5 @@
+import jdk.nashorn.internal.scripts.JO;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -108,7 +110,7 @@ public class Test extends JFrame implements ActionListener {
     }
 
 
-    private void fillCard1() {
+    void fillCard1() {
         // create_product button
         JButton create_product = new JButton("Auto Create Product");
         create_product.addActionListener(this);
@@ -208,12 +210,11 @@ public class Test extends JFrame implements ActionListener {
 
         //Size and display the window.
         this.setVisible(true);
-
         this.setSize(windowLength, windowLength);
 //        this.setResizable(false);
     }
 
-    private void repaintScrollPane1() {
+    void repaintScrollPane1() {
         card1.setLayout(new GridLayout((grid_products.size() + num_of_cols - 1)/num_of_cols,
                 3, 5, 5));
 
@@ -296,13 +297,17 @@ public class Test extends JFrame implements ActionListener {
                     System.out.println("product " + id + " put to cart; ");
                 } else {
                     System.out.println("already exist; ");
+                    JOptionPane.showMessageDialog(this,
+                            "already added!",
+                            "warning",
+                            JOptionPane.WARNING_MESSAGE);
                 }
 
             } else if (command_split[1].equals("new")) {
                 // command: product_new
                 System.out.println(command + "; ");
 
-                createProductDialog();
+                createProductFrame();
 
             } else {
                 System.out.println("unknown command in product");
@@ -398,6 +403,12 @@ public class Test extends JFrame implements ActionListener {
 
                     writer.close();
                     System.out.println("file written: "+file_name + file_ext);
+                    JOptionPane.showMessageDialog(this,
+                            file_name + file_ext +
+                                    " has been written.",
+                            "success!",
+                            JOptionPane.INFORMATION_MESSAGE
+                            );
                 } catch (FileNotFoundException e1) {
                     e1.printStackTrace();
                 } catch (UnsupportedEncodingException e1) {
@@ -413,38 +424,8 @@ public class Test extends JFrame implements ActionListener {
         }
     }
 
-    private void createProductDialog() {
-        JDialog dialog = new JDialog (this, Dialog.ModalityType.APPLICATION_MODAL);
-//        dialog.setLayout(new BoxLayout(dialog, BoxLayout.Y_AXIS));
-        dialog.setModal (true);
-        dialog.setAlwaysOnTop (true);
-        dialog.setSize(800, 800);
-        dialog.setVisible(true);
-
-
-        // add component
-        JPanel dialog_pan = new JPanel();
-        JLabel image_lable, name_label, price_label;
-        JTextField name_textField, price_textField;
-        JButton creat_button;
-
-        image_lable = new JLabel(new ImageIcon(
-                new ImageIcon(default_image_path)
-                        .getImage()
-                        .getScaledInstance(150, 150,
-                                Image.SCALE_DEFAULT)
-        ));
-        dialog_pan.add(image_lable);
-
-        name_label = new JLabel("name");
-        dialog_pan.add(name_label);
-
-        price_label = new JLabel("price");
-        dialog_pan.add(price_label);
-
-        creat_button = new JButton("create product");
-        dialog_pan.add(creat_button);
-        dialog.add(dialog_pan);
+    private void createProductFrame() {
+        CreateProductPopWindow popup = new CreateProductPopWindow(this);
 
 
     }
