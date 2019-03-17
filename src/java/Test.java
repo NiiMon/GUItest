@@ -6,9 +6,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.nio.file.Files;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -336,14 +338,25 @@ public class Test extends JFrame implements ActionListener {
 
                 // get current time
                 DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
+                DateTimeFormatter folder = DateTimeFormatter.ofPattern("yyyyMMdd");
                 LocalDateTime now = LocalDateTime.now();
 
                 String file_name = dtf.format(now) + "_" + summary_customer_name_input.getText();
                 String file_ext = ".txt";
+                String file_path = "receipts/" + folder.format(now) + "/";
+
+//                System.out.println(file_path);
+                File file = new File(file_path);
+                if (!file.exists()) {
+                    file.mkdirs();
+                }
 
                 try {
                     // get writer
-                    PrintWriter writer = new PrintWriter(file_name + file_ext, "UTF-8");
+                    PrintWriter writer = new PrintWriter(
+                            file_path + file_name + file_ext,
+                            "UTF-8"
+                    );
 
                     // write header information
                     writer.println(stringSpliter("-", 60));
@@ -381,7 +394,7 @@ public class Test extends JFrame implements ActionListener {
                     System.out.println("file written: "+file_name + file_ext);
                     JOptionPane.showMessageDialog(
                             this,
-                            file_name + file_ext + " has been written.",
+                            file_path + file_name + file_ext + " has been written.",
                             "success!",
                             JOptionPane.INFORMATION_MESSAGE
                     );
