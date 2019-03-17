@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1baf6dfd-ae2f-4a46-b8f0-0153ea7dbe1c" name="Default" comment="CreateProductPopWindow.java: &#10;- component left alignment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUItest/ProductDataModel.class" afterPath="$PROJECT_DIR$/out/production/GUItest/ProductDataModel.class" />
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/ProductDataModelDAOSqliteImpl.class" afterPath="$PROJECT_DIR$/out/production/GUItest/ProductDataModelDAOSqliteImpl.class" />
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test$1.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test$2.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test$2.class" />
       <change beforePath="$PROJECT_DIR$/out/production/GUItest/Test.class" afterPath="$PROJECT_DIR$/out/production/GUItest/Test.class" />
-      <change beforePath="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" afterPath="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" />
-      <change beforePath="$PROJECT_DIR$/src/java/ProductDataModel.java" afterPath="$PROJECT_DIR$/src/java/ProductDataModel.java" />
+      <change beforePath="$PROJECT_DIR$/src/java/Test.java" afterPath="$PROJECT_DIR$/src/java/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +25,8 @@
           <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/java/Test.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+                <state relative-caret-position="266">
+                  <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -41,8 +41,8 @@
           <file leaf-file-name="CreateProductPopWindow.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="449">
-                  <caret line="144" column="48" lean-forward="false" selection-start-line="144" selection-start-column="48" selection-end-line="144" selection-end-column="48" />
+                <state relative-caret-position="389">
+                  <caret line="80" column="51" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
@@ -120,9 +120,9 @@
         <option value="$PROJECT_DIR$/src/java/ProductDataModelDAO.java" />
         <option value="$PROJECT_DIR$/src/java/Product.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModelDAOSqliteImpl.java" />
-        <option value="$PROJECT_DIR$/src/java/Test.java" />
         <option value="$PROJECT_DIR$/src/java/ProductDataModel.java" />
         <option value="$PROJECT_DIR$/src/java/CreateProductPopWindow.java" />
+        <option value="$PROJECT_DIR$/src/java/Test.java" />
       </list>
     </option>
   </component>
@@ -425,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552802210468</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CreateProductPopWindow.java: &#10;- copy the choosed product image to image/ path.&#10;- change the ProductDataModel's path to image/ path.&#10;&#10;ProductDataModel.java:&#10;- add imagePath setter">
+      <created>1552802980716</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552802980716</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -467,7 +474,8 @@
     <MESSAGE value="CreateProductPopWindow.java: &#10;- component left alignment" />
     <MESSAGE value="CreateProductPopWindow.java: &#10;- change imageIcon once a picture has been selected, and it's valid." />
     <MESSAGE value="CreateProductPopWindow.java: &#10;- remember the last valid path on the next file choosing." />
-    <option name="LAST_COMMIT_MESSAGE" value="CreateProductPopWindow.java: &#10;- remember the last valid path on the next file choosing." />
+    <MESSAGE value="CreateProductPopWindow.java: &#10;- copy the choosed product image to image/ path.&#10;- change the ProductDataModel's path to image/ path.&#10;&#10;ProductDataModel.java:&#10;- add imagePath setter" />
+    <option name="LAST_COMMIT_MESSAGE" value="CreateProductPopWindow.java: &#10;- copy the choosed product image to image/ path.&#10;- change the ProductDataModel's path to image/ path.&#10;&#10;ProductDataModel.java:&#10;- add imagePath setter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -649,16 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/ProductDataModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -671,9 +669,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/CreateProductPopWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="144" column="48" lean-forward="false" selection-start-line="144" selection-start-column="48" selection-end-line="144" selection-end-column="48" />
+        <state relative-caret-position="389">
+          <caret line="80" column="51" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

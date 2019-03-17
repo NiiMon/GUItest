@@ -112,13 +112,6 @@ public class Test extends JFrame implements ActionListener {
 
 
     void fillCard1() {
-        // create_product button
-        JButton create_product = new JButton("Auto Create Product");
-        create_product.addActionListener(this);
-        create_product.setActionCommand("product_create");
-        grid_products.put(-1, create_product);
-        card1.add(create_product);
-
         JButton new_product = new JButton("new product");
         new_product.addActionListener(this);
         new_product.setActionCommand("product_new");
