@@ -135,27 +135,14 @@ public class Test extends JFrame implements ActionListener {
         JPanel summary = new JPanel();
 
         // summary customer name
+        summary_customer_name_display = new JLabel("Customer: ");
         summary_customer_name_input = new JTextField();
         summary_customer_name_input.setColumns(10);
-        summary_customer_name_display = new JLabel("Customer: ");
-        summary_customer_name_display.setFont(new Font(summary_customer_name_display.getFont().getName(),
-                Font.PLAIN,
-                summary_customer_name_display.getFont().getSize() * 2));
-
-        summary_customer_name_input.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyReleased(KeyEvent e) {
-                summary_customer_name_display.setText("Customer: "
-                        + summary_customer_name_input.getText());
-            }
-        });
 
         // summary refresh button
         summary_refresh = new JButton("refresh");
         summary_refresh.addActionListener(this);
         summary_refresh.setActionCommand("summary_refresh");
-
-
 
         // summary total price
         summary_total_price = new JLabel("Total: $ 0.00");
@@ -164,18 +151,15 @@ public class Test extends JFrame implements ActionListener {
                 summary_total_price.getFont().getSize() * 2));
         summary_total_price.setForeground(Color.RED);
 
-
         // write to file button
         summary_writeToFile = new JButton("write to file");
         summary_writeToFile.addActionListener(this);
         summary_writeToFile.setActionCommand("summary_write");
 
-
-
         // add to summary panel
+        summary.add(summary_customer_name_display);
         summary.add(summary_customer_name_input);
         summary.add(summary_refresh);
-        summary.add(summary_customer_name_display);
         summary.add(summary_total_price);
         summary.add(summary_writeToFile);
 
