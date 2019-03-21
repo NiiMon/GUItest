@@ -1,5 +1,3 @@
-import jdk.nashorn.internal.scripts.JO;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -14,6 +12,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Test extends JFrame implements ActionListener {
 
@@ -359,13 +359,18 @@ public class Test extends JFrame implements ActionListener {
                 String file_ext = ".txt";
                 String file_path = "receipts/" + folder.format(now) + "/";
 
-//                System.out.println(file_path);
                 File file = new File(file_path);
                 if (!file.exists()) {
                     file.mkdirs();
                 }
 
                 try {
+                    // text length for alignment
+                    int nameLength = 35;
+                    int countLength = 10;
+                    int priceLenth = 15;
+                    int totalLenth = nameLength + countLength + priceLenth + 3;
+
                     // get writer
                     PrintWriter writer = new PrintWriter(
                             file_path + file_name + file_ext,
@@ -373,22 +378,23 @@ public class Test extends JFrame implements ActionListener {
                     );
 
                     // write header information
-                    writer.println(stringSpliter("-", 60));
+                    writer.println(stringSpliter("-", totalLenth));
                     writer.println(
                             summary_customer_name_display.getText() +
                             summary_customer_name_input.getText()
                     );
-                    writer.println(stringSpliter("-", 60));
+                    writer.println(stringSpliter("-", totalLenth));
                     writer.println(
-                            String.format("%s%s%s",
-                            padRight("商品",  //"product",
-                                    35),
-                            padLeft("数量",    //"count",
-                                    10),
-                            padLeft("价值",    //"price",
-                                    15))
+                            print3Rows(
+                                    padRight("商品名称",
+                                            nameLength - getChinaNum("商品名称")),
+                                    padLeft("数量",
+                                            countLength - getChinaNum("数量")),
+                                    padLeft("价值",
+                                            priceLenth - getChinaNum("价值"))
+                            )
                     );
-                    writer.println(stringSpliter("-", 60));
+                    writer.println(stringSpliter("-", totalLenth));
 
                     // write rows
                     for (int id : shopping_cart.keySet()) {
@@ -397,18 +403,24 @@ public class Test extends JFrame implements ActionListener {
                         int count = shopping_cart.get(id);
                         double price = pdm.get_price() * count;
 
-                        writer.println(String.format(
-                                "%s%s%s",
-                                padRight(name, 35),
-                                padLeft("" + count, 10),
-                                padLeft(String.format("$ " + "%.2f", price), 15)
+                        writer.println(
+                                print3Rows(
+                                padRight(name,
+                                        nameLength - getChinaNum(name)),
+                                padLeft("" + count,
+                                        countLength),
+                                padLeft(String.format("$ " + "%,.2f", price),
+                                        priceLenth)
                         ));
                     }
 
                     // write footer
-                    writer.println(stringSpliter("-", 60));
-                    writer.println(padLeft(summary_total_price.getText(), 60));
-                    writer.println(stringSpliter("-", 60));
+                    writer.println(stringSpliter("-", totalLenth));
+                    writer.println(
+                            padLeft(summary_total_price.getText(),
+                                    totalLenth - getChinaNum(summary_total_price.getText()))
+                    );
+                    writer.println(stringSpliter("-", totalLenth));
 
                     writer.close();
                     System.out.println("file written: "+file_name + file_ext);
@@ -448,15 +460,40 @@ public class Test extends JFrame implements ActionListener {
 
 
     }
-    public static String padRight(String s, int n) {
+
+    private static String print3Rows(String s1, String s2, String s3) {
+        return String.format(
+                "%s\t%s\t%s",
+                s1,
+                s2,
+                s3
+        );
+    }
+
+
+    private static int getChinaNum(String str) {
+        int amount = 0;
+        String exp="^[\u4E00-\u9FA5|\\！|\\,|\\。|\\（|\\）|\\《|\\》|\\“|\\”|\\？|\\：|\\；|\\【|\\】]$";
+        Pattern pattern= Pattern.compile(exp);
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            Matcher matcher=pattern.matcher(c + "");
+            if(matcher.matches()) {
+                amount++;
+            }
+        }
+        return amount;
+    }
+
+    private static String padRight(String s, int n) {
         return String.format("%-" + n + "s", s);
     }
 
-    public static String padLeft(String s, int n) {
+    private static String padLeft(String s, int n) {
         return String.format("%" + n + "s", s);
     }
 
-    public static String stringSpliter(String s, int n) {
+    private static String stringSpliter(String s, int n) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
             sb.append(s);
