@@ -64,7 +64,7 @@ public class ShoppingCartRow extends JPanel{
 
         // remove button
         ImageIcon delete_icon = new ImageIcon(
-                new ImageIcon("image/icon_delete.png")
+                new ImageIcon("image/icon/icon_delete.png")
                         .getImage()
                         .getScaledInstance(20, 20, Image.SCALE_DEFAULT)
         );

@@ -157,7 +157,7 @@ public class CreateProductPopWindow extends JFrame implements ActionListener {
                         price
                 );
 
-                String dstPath = String.format("image/product_%d.jpg", pdm.get_id());
+                String dstPath = String.format("image/product/product_%d.jpg", pdm.get_id());
                 pdm.set_imagePath(dstPath);
 
                 copyFile(absImagePath, dstPath);

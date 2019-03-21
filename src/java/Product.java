@@ -67,7 +67,7 @@ public class Product extends JPanel {
     private void initUI() {
         text = new JLabel(product_name);
         ImageIcon delete_icon = new ImageIcon(
-                new ImageIcon("image/icon_delete.png")
+                new ImageIcon("image/icon/icon_delete.png")
                 .getImage()
                 .getScaledInstance(20, 20, Image.SCALE_DEFAULT)
         );
@@ -96,7 +96,7 @@ public class Product extends JPanel {
         jLabel_product_price.setForeground(Color.red);
 
         ImageIcon addToCart_icon = new ImageIcon(
-                new ImageIcon("image/icon_add.png")
+                new ImageIcon("image/icon/icon_add.png")
                         .getImage()
                         .getScaledInstance(20, 20, Image.SCALE_DEFAULT)
         );

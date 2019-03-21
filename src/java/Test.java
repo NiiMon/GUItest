@@ -64,7 +64,7 @@ public class Test extends JFrame implements ActionListener {
 
         SHOPPINGPANEL = "商品"; //"Products";
         TEXTPANEL = "购物车"; //"Summary";
-        default_image_path = "image/default_product_image.png";   // default image
+        default_image_path = "image/product/default_product_image.png";   // default image
 
         extraWindowWidth = 100;
         num_of_cols = 4;
@@ -140,7 +140,7 @@ public class Test extends JFrame implements ActionListener {
 
         // summary refresh button
         ImageIcon refresh_icon = new ImageIcon(
-                new ImageIcon("image/icon_refresh.png")
+                new ImageIcon("image/icon/icon_refresh.png")
                         .getImage()
                         .getScaledInstance(20, 20, Image.SCALE_DEFAULT)
         );
@@ -149,7 +149,7 @@ public class Test extends JFrame implements ActionListener {
         summary_refresh.setActionCommand("summary_refresh");
 
         ImageIcon delete_icon = new ImageIcon(
-                new ImageIcon("image/icon_delete.png")
+                new ImageIcon("image/icon/icon_delete.png")
                         .getImage()
                         .getScaledInstance(20, 20, Image.SCALE_DEFAULT)
         );
