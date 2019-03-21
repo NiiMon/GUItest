@@ -332,7 +332,7 @@ public class Test extends JFrame implements ActionListener {
                 }
 
                 summary_total_price.setText("总价： $ " +    //"Total: $ " +
-                        String.format("%.2f", sum));
+                        String.format("%,.2f", sum));
 
 
 
