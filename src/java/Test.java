@@ -51,7 +51,7 @@ public class Test extends JFrame implements ActionListener {
     JTabbedPane tabbedPane;
 
     JLabel summary_total_price, summary_customer_name_display;
-    JButton summary_refresh, summary_writeToFile;
+    JButton summary_refresh, summary_writeToFile, summary_clearCart;
     JTextField summary_customer_name_input;
 
     ProductDataModelDAO PDM_db;
@@ -148,6 +148,15 @@ public class Test extends JFrame implements ActionListener {
         summary_refresh.addActionListener(this);
         summary_refresh.setActionCommand("summary_refresh");
 
+        ImageIcon delete_icon = new ImageIcon(
+                new ImageIcon("image/icon_delete.png")
+                        .getImage()
+                        .getScaledInstance(20, 20, Image.SCALE_DEFAULT)
+        );
+        summary_clearCart = new JButton("清空购物车", delete_icon);
+        summary_clearCart.addActionListener(this);
+
+
         // summary total price
         summary_total_price = new JLabel("总价：$ 0.00");     //"Total: $ 0.00");
         summary_total_price.setFont(new Font(summary_total_price.getFont().getName(),
@@ -164,6 +173,7 @@ public class Test extends JFrame implements ActionListener {
         summary.add(summary_customer_name_display);
         summary.add(summary_customer_name_input);
         summary.add(summary_refresh);
+        summary.add(summary_clearCart);
         summary.add(summary_total_price);
         summary.add(summary_writeToFile);
 
@@ -368,14 +378,14 @@ public class Test extends JFrame implements ActionListener {
                             summary_customer_name_input.getText()
                     );
                     writer.println(stringSpliter("-", 60));
-                    writer.printf(
-                            "%s%s%s\n",
+                    writer.println(
+                            String.format("%s%s%s",
                             padRight("商品",  //"product",
                                     35),
                             padLeft("数量",    //"count",
                                     10),
                             padLeft("价值",    //"price",
-                                    15)
+                                    15))
                     );
                     writer.println(stringSpliter("-", 60));
 
@@ -386,12 +396,12 @@ public class Test extends JFrame implements ActionListener {
                         int count = shopping_cart.get(id);
                         double price = pdm.get_price() * count;
 
-                        writer.printf(
-                                "%s%s%s\n",
+                        writer.println(String.format(
+                                "%s%s%s",
                                 padRight(name, 35),
                                 padLeft("" + count, 10),
                                 padLeft(String.format("$ " + "%.2f", price), 15)
-                        );
+                        ));
                     }
 
                     // write footer
@@ -418,6 +428,15 @@ public class Test extends JFrame implements ActionListener {
             } else {
                 System.out.println("unknown command in shopping");
             }
+        } else if (e.getSource() == summary_clearCart) {
+            for (int id : shopping_cart.keySet()) {
+                card2.remove(shopping_cart_component.get(id));
+                shopping_cart_component.remove(id);
+            }
+            shopping_cart = new HashMap<>();
+
+            repaintScrollPane2();
+            System.out.println("shopping cart has been cleared;");
         } else {
             System.out.println("unknown command");
         }
