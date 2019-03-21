@@ -311,6 +311,7 @@ public class Test extends JFrame implements ActionListener {
 
                 if (shopping_cart.containsKey(id)) {
                     card2.remove(shopping_cart_component.get(id));
+                    shopping_cart_component.remove(id);
                     shopping_cart.remove(id);
                 }
 
